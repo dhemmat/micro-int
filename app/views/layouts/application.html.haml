@@ -2,8 +2,8 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title= content_for?(:title) ? yield(:title) : "Rails Bootstrap"
-    %meta{:content => content_for?(:description) ? yield(:description) : "Micro-Int: Micro coding interviews", :name => "Mini app for micro coding interviews"}/
+    %title= content_for?(:title) ? yield(:title) : "Micro-Int: Micro coding interviews"
+    %meta{:content => content_for?(:description) ? yield(:description) : "Mini app for micro coding interviews", :name => "description"}/
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags

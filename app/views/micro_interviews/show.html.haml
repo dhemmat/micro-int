@@ -5,7 +5,7 @@
   %br
   %p
     %strong Results link:
-    = root_url + micro_interview_path(@micro_interview)
+    = link_to (root_url.chomp("/") + micro_interview_path(@micro_interview.unique_id)), micro_interview_path(@micro_interview.unique_id)
   %p
     %strong Name:
     =@micro_interview.name

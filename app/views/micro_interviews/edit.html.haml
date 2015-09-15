@@ -3,7 +3,7 @@
   .panel-body
     %p
     %strong Interview link:
-    = root_url + edit_micro_interview_path(@micro_interview)
+    = link_to (root_url.chomp("/") + edit_micro_interview_path(@micro_interview.unique_id)), edit_micro_interview_path(@micro_interview.unique_id)
     %h3 Question
     %p.code= @micro_interview.question_text
 
