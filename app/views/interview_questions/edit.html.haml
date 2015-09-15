@@ -1,0 +1,21 @@
+%h1 Micro-Interview
+.panel.panel-default
+  .panel-body
+    %h3 Question
+    %p.code= @interview_question.question_text
+
+= form_for @interview_question, url: {action: "update", params: {id: @interview_question.unique_id}} do |f|
+  .form-group
+    = f.label :name, "Your name"
+    = f.text_field :name, class:"form-control"
+  .form-group
+    = f.label :email, "Your email"
+    = f.text_field :email, class:"form-control"
+  .form-group 
+    = f.label :response_language, "Reponse language"
+    = f.text_field :response_language, class:"form-control"
+  .form-group
+    = f.label :response_text, "Your response"
+    = f.text_area :response_text, class:"form-control code", rows: 10
+
+  = f.submit "Submit response", class:'btn btn-large btn-primary'

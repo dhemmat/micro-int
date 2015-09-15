@@ -1,0 +1,19 @@
+%h1 Create Micro-Interview
+
+= form_for @interview_question do |f|
+  .form-group
+    = f.label :name, "Interviewee name (optional)"
+    = f.text_field :name, class:"form-control"
+  .form-group
+    = f.label :email, "Interviewee email (optional)"
+    = f.text_field :email, class:"form-control"
+  .form-group
+    = f.label :question_text, "Question*"
+    = f.text_area :question_text, class:"form-control code", rows:5
+  .form-group 
+    = f.label :response_language, "Response language (optional)"
+    = f.text_field :response_language, class:"form-control"
+  .form-group
+    = f.label :response_text, "Response text (optional)"
+    = f.text_area :response_text, class:"form-control code", rows:5
+  = f.submit "Create question", class:'btn btn-large btn-primary'
