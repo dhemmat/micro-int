@@ -1,6 +1,6 @@
-class CreateInterviewQuestions < ActiveRecord::Migration
+class CreateMicroInterviews < ActiveRecord::Migration
   def change
-    create_table :interview_questions do |t|
+    create_table :micro_interviews do |t|
       t.string :unique_id
       t.string :name
       t.string :email

@@ -1,10 +1,13 @@
 %h1 Micro-Interview
 .panel.panel-default
   .panel-body
+    %p
+    %strong Interview link:
+    = root_url + edit_micro_interview_path(@micro_interview)
     %h3 Question
-    %p.code= @interview_question.question_text
+    %p.code= @micro_interview.question_text
 
-= form_for @interview_question, url: {action: "update", params: {id: @interview_question.unique_id}} do |f|
+= form_for @micro_interview, url: {action: "update", params: {id: @micro_interview.unique_id}} do |f|
   .form-group
     = f.label :name, "Your name"
     = f.text_field :name, class:"form-control"

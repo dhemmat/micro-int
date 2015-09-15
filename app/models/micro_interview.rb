@@ -1,4 +1,4 @@
-class InterviewQuestion < ActiveRecord::Base
+class MicroInterview < ActiveRecord::Base
   def submitted?
     !!submitted_flag
   end  

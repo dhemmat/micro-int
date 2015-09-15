@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150915155351) do
 
-  create_table "interview_questions", force: :cascade do |t|
+  create_table "micro_interviews", force: :cascade do |t|
     t.string   "unique_id"
     t.string   "name"
     t.string   "email"
