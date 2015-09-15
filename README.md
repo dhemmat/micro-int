@@ -1,4 +1,4 @@
-# Micro-int
+# Micro-Int
 
 Micro-Int is a very basic rails app for micro coding interviews. You can use this when you would like to send a candidate a coding test as a screener before the real interview. 
 
