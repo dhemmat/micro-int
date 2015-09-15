@@ -5,7 +5,7 @@
     %strong Interview link:
     = link_to (root_url.chomp("/") + edit_micro_interview_path(@micro_interview.unique_id)), edit_micro_interview_path(@micro_interview.unique_id)
     %h3 Question
-    %p.code= @micro_interview.question_text
+    %pre.scrollable.code= @micro_interview.question_text
 
 = form_for @micro_interview, url: {action: "update", params: {id: @micro_interview.unique_id}} do |f|
   .form-group

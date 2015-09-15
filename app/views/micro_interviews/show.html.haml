@@ -19,8 +19,8 @@
   %hr
   %h3 Question
   %br
-  %p.code
-    =@micro_interview.question_text
+  %pre.scrollable.code
+    =simple_format(@micro_interview.question_text)
 
   %hr
   %h3 Response
@@ -29,5 +29,5 @@
     %strong Response language: 
     =@micro_interview.response_language
   %br
-  %p.code
+  %pre.scrollable.code
     =@micro_interview.response_text

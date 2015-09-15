@@ -2,5 +2,16 @@
 
 .code {
   font-family: 'Cutive Mono';
-  font-size: 1.2em;
+}
+
+pre.scrollable {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+textarea.code {
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: scroll;
 }
