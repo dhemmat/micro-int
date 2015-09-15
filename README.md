@@ -12,3 +12,9 @@ Once the question is created, simply share the interview link displayed with the
 
 ### Reviewing the interview
 Once a candidate completes a micro-interview, the link to the interview will now redirect to the results. You can use the results link displayed to share the results with other team members. 
+
+## MIT License
+
+[MIT License](http://www.opensource.org/licenses/mit-license)
+
+Copyright ©2015 David Hemmat
