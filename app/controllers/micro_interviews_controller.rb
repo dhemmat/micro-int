@@ -3,7 +3,11 @@ class MicroInterviewsController < ApplicationController
   before_action :verify_submitted, only: [:edit, :update]
 
   def new
-    @micro_interview = MicroInterview.new
+    if params[:id]
+      @micro_interview = MicroInterview.find_by_unique_id(params[:id]).dup
+    else
+      @micro_interview = MicroInterview.new
+    end
   end
 
   def create
